@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Liveable Neighbourhoods for Bristol</title>
+    <meta name="description" content="# Description to go here" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="Liveable Neighbourhoods for Bristol" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="accordion.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" async defer></script>
+    <script src="facebook_groups.json" async defer></script>
+  </head>
+  <body class="container">
+    <header>
+      <img
+        src="assets/logo-header.png"
+        alt="Liveable Neighbourhoods for Bristol logo"
+        id="logo"
+      />
+    </header>
+    <section>
+      <img
+        src="assets/gathorne-road-permanent.jpg"
+        alt="Street-level design drawing of what a Liveable Neighbourhood might look like at the junction of North Street and Gathorne Road in Bedminster."
+      />
+      <h2 class="ln-explained">
+        Liveable Neighbourhoods Explained
+      </h2>
+      <p>
+        What are Liveable Neighbourhoods? Essentially they are neighbourhoods
+        where streets are for locals not through-traffic. Neighbourhoods with
+        good air quality, safe walking and cycling routes, safe spaces for
+        children to play, and improved public realm with more greenery and more
+        outdoor seating.
+      </p>
+    </section>
+    <section>
+      <h3>
+        This video by Oxfordshire Liveable Streets provides an excellent
+        overview:
+      </h3>
+      <div class="embed-container">
+        <iframe
+          src="https://www.youtube.com/embed/h5aZW28aFIg"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <section id="ward-finder" class="container">
+      <h2>
+        Find Groups working towards liveable and low-traffic neighbourhoods in
+        you area
+      </h2>
+      <img src="/assets/pin.svg" class="geo-pin" />
+      <div class="dropdown-background">
+        <form>
+          <label for="postcode-input">Enter your postcode:</label>
+          <input id="postcode-input" type="text" />
+        </form>
+      </div>
+      <div id="group-msg"></div>
+    </section>
+    <section id="faq">
+      <h2>Liveable Neighbourhoods FAQ</h2>
+      <button class="accordion">What are Liveable Neighbourhoods?</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+      <button class="accordion">How do Liveable Neighbourhoods work?</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+      <button class="accordion">
+        What benefits do Liveable Neighbourhoods bring?
+      </button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+    </section>
+    <hr />
+    <section id="organisations">
+      <h2>Organisations Supporting Liveable Neighbourhoods in Bristol</h2>
+      <div class="org-grid">
+        <span class="org-logo"></span>
+        <span class="org-logo"></span>
+        <span class="org-logo"></span>
+        <span class="org-logo"></span>
+        <span class="org-logo"></span>
+        <span class="org-logo"></span>
+      </div>
+    </section>
+    <footer>
+      <p>
+        This page has been created by
+        <a href="https://www.bristolcycling.org.uk">Bristol Cycling Campaign</a>
+        and <a href="Bristol Walking Alliance">Bristol Walking Alliance</a>.
+        Individual groups linked from this page are independent, and do not
+        necessarily reflect the views of Bristol Walking Alliance and Bristol
+        Cycling Campaign.
+      </p>
+    </footer>
+  </body>
+</html>
