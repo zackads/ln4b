@@ -1,4 +1,4 @@
-// Accordion
+// # Accordion
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -18,52 +18,55 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-// Postcode -> ward lookup
-const source = document.getElementById("postcode-input");
-const result = document.getElementById("group-msg");
+// # Postcode -> ward lookup
+let input = document.getElementById("postcode-input");
+let output = document.getElementById("group-msg");
 
-let timeout = null;
+// Only query and display FB group after user finishes typing
+let input_timeout = null;
 
-const inputHandler = function (e) {
-  clearTimeout(timeout);
+input.addEventListener("keyup", function (e) {
+  clearTimeout(input_timeout);
 
-  timeout = setTimeout(function () {
-    const postcode = e.target.value;
+  input_timeout = setTimeout(function () {
+    console.log("Input Value:", input.value);
+
+    const postcode = input.value;
     const request = new XMLHttpRequest();
-  
+
     request.open("GET", `https://api.postcodes.io/postcodes/${postcode}`, true);
-  
+
     request.onload = function () {
-      const data = JSON.parse(this.response);
-  
+      const postcode_data = JSON.parse(this.response);
+
       if (request.status >= 200 && request.status < 400) {
-        console.log('success!')
-        console.log(data.result.admin_ward);
+        const ward = postcode_data.result.admin_ward;
+        console.log(`ward = ${ward}, url = ${groups[ward]}`);
+        output.innerHTML = `<p>Good news! A local Liveable Neighbourhoods group is active in ${ward}:</p>
+          <p>
+            <img id="fb-logo" src="/assets/fb_logo.png" alt="Facebook logo" />
+            <a href="${groups[ward].url}">${groups[ward].name}</a>
+          </p>`;
       } else {
-        console.log("Invalid postcode");
+        output.innerHTML = `<p>No group currently exists for your area. Why don't you set one up?</p>
+        <p>If you need support, speak to <a href="mailto:info@bristolcycling.org.uk">info@bristolcycling.org.uk</a>`;
       }
     };
     request.send();
-  }, 1000)
+  }, 1000);
+});
 
-source.addEventListener("input", inputHandler);
-source.addEventListener("propertychange", inputHandler); // for IE8
-
-
-// Firefox/Edge18-/IE9+ don’t fire on <select><option>
-// source.addEventListener('change', inputHandler);
-
-// No group currently exists for the Ashley ward. Why don't you set one up?
-// If you need support, speak to
-// <a href="mailto:info@bristolcycling.org.uk"
-//   >info@bristolcycling.org.uk</a
-// >.
-
-// <p>
-//           Good news! A local Liveable Neighbourhoods group is active in your
-//           area:
-//         </p>
-//         <p>
-//           <img id="fb-logo" src="/assets/fb_logo.png" alt="Facebook logo" />
-//           <a href="">Group Name Here</a>
-//         </p>
+const groups = {
+  Cotham: {
+    name: "Cotham Liveable Streets",
+    url: "https://en-gb.facebook.com/cothams/",
+  },
+  "Lawrence Hill": {
+    name: "Liveable Lawrence Hill",
+    url: "https://www.facebook.com/pages/Lawrence-Hill-Bristol/242077265821144",
+  },
+  "Windmill Hill": {
+    name: "Walkable Windmill Hill",
+    url: "https://en-gb.facebook.com/groups/WMH.VP/",
+  },
+};
