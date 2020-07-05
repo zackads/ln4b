@@ -42,11 +42,11 @@ input.addEventListener("keyup", function (e) {
       if (request.status >= 200 && request.status < 400) {
         const ward = postcode_data.result.admin_ward;
         console.log(`ward = ${ward}, url = ${groups[ward]}`);
-        output.innerHTML = `<p>Good news! A local Liveable Neighbourhoods group is active in ${ward}:</p>
-          <p>
+        output.innerHTML = `<p>Great news! A local Liveable Neighbourhoods group is active in ${ward}:</p>
+          <div>
             <img id="fb-logo" src="/assets/fb_logo.png" alt="Facebook logo" />
             <a href="${groups[ward].url}">${groups[ward].name}</a>
-          </p>`;
+          </div>`;
       } else {
         output.innerHTML = `<p>No group currently exists for your area. Why don't you set one up?</p>
         <p>If you need support, speak to <a href="mailto:info@bristolcycling.org.uk">info@bristolcycling.org.uk</a>`;
