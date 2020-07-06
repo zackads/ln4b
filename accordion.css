@@ -1,5 +1,7 @@
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
+  font-family: Muli, sans-serif;
+  font-size: medium;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -28,4 +30,26 @@ button.accordion.active::after {
   padding: 0 18px;
   display: none;
   overflow: hidden;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+#faq h2 {
+  padding: 2rem;
+  background-image: url(assets/faq-background.jpg);
+  background-size: cover;
+  text-align: center;
+  font-family: Muli;
+  font-size: larger;
+  color: #ffffff;
+  text-decoration: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.panel p,
+blockquote {
+  font-family: Roboto, sans-serif;
+  font-size: small;
 }

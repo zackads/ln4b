@@ -49,6 +49,24 @@ img {
   width: 100%;
   height: auto;
   box-sizing: border-box;
+  vertical-align: text-bottom;
+}
+
+#site-header {
+  background-image: url("/assets/header-trees.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#site-header img {
+  background: white;
+  width: 90vw;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 600px;
 }
 
 #logo {
@@ -65,18 +83,25 @@ img {
   background-size: cover;
 }
 
+#ward-finder form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgb(250, 169, 22);
+  box-sizing: border-box;
+}
+
+#ward-finder form * {
+  margin: 0.3rem;
+}
+
 #ward-finder p {
   color: rgb(10, 10, 10);
   background-color: rgb(255, 255, 255);
   text-decoration: rgb(10, 10, 10);
   opacity: 1;
-}
-
-#ward-finder .dropdown-background {
-  margin: 1rem;
-  padding: 0.5rem;
-  box-sizing: border-box;
-  background-color: rgb(250, 169, 22);
 }
 
 #ward-finder .geo-pin {
@@ -94,27 +119,14 @@ img {
   background-color: white;
 }
 
-#faq h2 {
-  padding: 2rem;
-  background-image: url(assets/faq-background.jpg);
-  background-size: cover;
-  text-align: center;
-  font-family: Muli;
-  font-size: larger;
-  color: #ffffff;
-  text-decoration: rgb(255, 255, 255);
-  text-align: center;
+#ward-finder #group-msg #facebook-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#faq .accordion {
-  font-family: Muli, sans-serif;
-  font-size: medium;
-}
-
-#faq .panel p,
-blockquote {
-  font-family: Roboto, sans-serif;
-  font-size: small;
+#ward-finder #group-msg #facebook-link #fb-logo {
+  margin: 1rem;
 }
 
 #organisations .org-grid {
@@ -152,4 +164,16 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
 }
