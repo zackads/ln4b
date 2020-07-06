@@ -105,7 +105,8 @@ img {
 }
 
 #ward-finder .geo-pin {
-  display: none;
+  max-height: 5rem;
+  width: auto;
 }
 
 #ward-finder select {
@@ -165,16 +166,14 @@ button.accordion.active::after {
 }
 
 #faq h2 {
-  padding: 2rem;
+  padding: 8vw;
   background-image: url(assets/faq-background.jpg);
   background-size: cover;
   text-align: center;
-  font-family: Muli;
+  font-family: Muli, sans-serif;
   font-size: larger;
   color: #ffffff;
   text-decoration: rgb(255, 255, 255);
-  text-align: center;
-  box-sizing: border-box;
 }
 
 .panel p,
