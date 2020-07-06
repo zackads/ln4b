@@ -1,4 +1,4 @@
-// # Accordion
+// Accordion
 var acc = document.getElementsByClassName("accordion");
 var i;
 
