@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  align-content: center;
   margin: 0;
   font-family: Roboto, sans-serif;
 }
@@ -25,7 +26,8 @@ h3 {
   font-family: Muli, sans-serif;
 }
 
-p {
+p,
+li {
   margin: 0;
   padding: 0.5rem;
   text-decoration: rgb(10, 10, 10);
@@ -39,6 +41,7 @@ blockquote {
   opacity: 0.8;
   text-decoration: rgb(10, 10, 10);
   line-height: 1.6;
+  font-style: italic;
 }
 
 a {
@@ -165,6 +168,17 @@ button.accordion.active::after {
   transition: max-height 0.2s ease-out;
 }
 
+.panel p,
+blockquote {
+  font-family: Roboto, sans-serif;
+  font-size: small;
+}
+
+.panel ul li {
+  font-family: Roboto, sans-serif;
+  font-size: small;
+}
+
 #faq h2 {
   padding: 8vw;
   background-image: url(assets/faq-background.jpg);
@@ -174,12 +188,6 @@ button.accordion.active::after {
   font-size: larger;
   color: #ffffff;
   text-decoration: rgb(255, 255, 255);
-}
-
-.panel p,
-blockquote {
-  font-family: Roboto, sans-serif;
-  font-size: small;
 }
 
 #organisations .org-grid {
@@ -228,9 +236,66 @@ footer {
     margin: 1rem 2rem;
     background-color: grey;
   }
+
+  #ward-finder form {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 768px) {
+  .inline {
+    display: grid;
+    grid-template-areas:
+      "img header"
+      "img text";
+    grid-template-rows: 3rem 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .side-image {
+    grid-area: img;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .ln-explained-header {
+    font-size: larger;
+    grid-area: header;
+    position: relative;
+    left: -5rem;
+    top: 1rem;
+    margin-left: -100px;
+    width: 50vw;
+  }
+
+  .ln-explained-text {
+    grid-area: text;
+    display: table-cell;
+    vertical-align: text-bottom;
+    position: relative;
+    top: 1.5rem;
+  }
+
+  h3 {
+    margin: 1rem;
+    text-align: center;
+  }
+
+  #faq h2 {
+    font-size: 1.5em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+  }
+
+  #faq {
+    max-width: 70vw;
+    margin: auto;
+  }
+
+  .explainer-video {
+    width: 80vw;
+  }
 }
 
 @media (min-width: 1024px) {
