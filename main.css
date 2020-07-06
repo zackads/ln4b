@@ -64,8 +64,8 @@ img {
 #site-header img {
   background: white;
   width: 90vw;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
   max-width: 600px;
 }
 
@@ -129,6 +129,60 @@ img {
   margin: 1rem;
 }
 
+.accordion {
+  font-family: Muli, sans-serif;
+  font-size: medium;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+button.accordion {
+  background-color: white;
+}
+
+button.accordion::after {
+  content: "\002B";
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+button.accordion.active::after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+#faq h2 {
+  padding: 2rem;
+  background-image: url(assets/faq-background.jpg);
+  background-size: cover;
+  text-align: center;
+  font-family: Muli;
+  font-size: larger;
+  color: #ffffff;
+  text-decoration: rgb(255, 255, 255);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.panel p,
+blockquote {
+  font-family: Roboto, sans-serif;
+  font-size: small;
+}
+
 #organisations .org-grid {
   display: inline-block;
   text-align: center;
@@ -154,6 +208,7 @@ footer {
   height: 0;
   overflow: hidden;
   max-width: 100%;
+  margin-bottom: 1rem;
 }
 
 .embed-container iframe,
@@ -167,6 +222,13 @@ footer {
 }
 
 @media (min-width: 640px) {
+  #organisations .org-logo {
+    display: inline-block;
+    width: 20vw;
+    height: 20vw;
+    margin: 1rem 2rem;
+    background-color: grey;
+  }
 }
 
 @media (min-width: 768px) {
