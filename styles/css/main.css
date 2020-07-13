@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Muli";
+  src: url(/assets/fonts/Muli-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(/assets/fonts/Roboto-Regular.ttf) format("truetype");
+}
+body {
+  font-family: Roboto, sans-serif;
+}
+
+/* Site colour variables */
+body {
+  max-width: 900px;
+  min-width: 320px;
+  margin: auto;
+}
+
+/* Images responsive by default */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* For display only to screen readers */
+/* Block elements */
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.header__text {
+  position: absolute;
+  margin: -1px 0 0 -1px;
+  padding: 0;
+  display: block;
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  line-height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  outline: 0;
+}
+.header__logo {
+  background-color: white;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+}
+
+/*# sourceMappingURL=main.css.map */
