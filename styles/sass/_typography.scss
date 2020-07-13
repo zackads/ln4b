@@ -8,6 +8,12 @@
   src: url(/assets/fonts/Roboto-Regular.ttf) format("truetype");
 }
 
-body {
-  font-family: Roboto, sans-serif;
+/* Font variable */
+$heading__font-family: Muli, sans-serif;
+$bodytext__font-family: Roboto, sans-serif;
+
+html {
+  font-size: 16px;
+  font-family: $bodytext__font-family;
+  line-height: 1.6;
 }

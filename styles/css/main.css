@@ -6,8 +6,11 @@
   font-family: "Roboto";
   src: url(/assets/fonts/Roboto-Regular.ttf) format("truetype");
 }
-body {
+/* Font variable */
+html {
+  font-size: 16px;
   font-family: Roboto, sans-serif;
+  line-height: 1.6;
 }
 
 /* Site colour variables */
@@ -15,6 +18,7 @@ body {
   max-width: 900px;
   min-width: 320px;
   margin: auto;
+  padding: 1rem;
 }
 
 /* Images responsive by default */
@@ -24,6 +28,7 @@ img {
 }
 
 /* For display only to screen readers */
+/* Media breakpoints */
 /* Block elements */
 .header {
   position: relative;
@@ -52,6 +57,43 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 600px;
+}
+
+.explainer__text--heading {
+  margin-top: 0;
+  padding: 0 0.5rem;
+  font-family: Muli, sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-decoration: white;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  background-color: #79d70f;
+}
+.explainer__text--bodytext {
+  padding: 0 0.5rem;
+}
+@media (min-width: 900px) {
+  .explainer {
+    display: flex;
+    align-items: flex-start;
+  }
+  .explainer__image {
+    min-width: 50%;
+  }
+  .explainer__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+  }
+  .explainer__text--heading {
+    margin-top: 1rem;
+    margin-left: -6rem;
+  }
+  .explainer__text--bodytext {
+    margin-left: 2rem;
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
