@@ -1,0 +1,67 @@
+.faq {
+  &__header {
+    padding: 8vw;
+    background-image: url(/assets/images/faq-background.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    text-align: center;
+    font-family: $heading__font-family;
+    font-size: 1.1rem;
+    color: $accent-text-color-1;
+    text-decoration: $accent-text-color-1;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  @include for-tablet-portrait-up {
+    &__header {
+      font-size: 1.7rem;
+    }
+  }
+
+  &__icon {
+    height: 2rem;
+    width: auto;
+    position: relative;
+    top: 8px;
+  }
+
+  &__accordion {
+    font-family: $heading__font-family;
+    font-size: medium;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    background-color: white;
+  }
+
+  &__accordion > h3 {
+    display: inline;
+  }
+
+  &__accordion::after {
+    content: "\002B";
+    font-weight: bold;
+    float: right;
+    margin-left: 10px;
+  }
+
+  &__accordion.active::after {
+    content: "\2212";
+  }
+
+  &__panel {
+    margin-left: 1rem;
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+}
