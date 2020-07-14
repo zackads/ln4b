@@ -2,6 +2,11 @@
   max-width: 100%;
   text-align: center;
   margin: auto;
+  margin-bottom: $section-bottom-margin;
+
+  @include for-phone-only {
+    margin-bottom: 1rem;
+  }
 
   &__heading {
     font-family: $heading__font-family;

@@ -2,6 +2,15 @@
   position: relative;
   text-align: center;
   color: white;
+  margin-bottom: $section-bottom-margin;
+
+  @include for-phone-only {
+    margin-bottom: 0;
+  }
+
+  &__background {
+    display: block;
+  }
 
   &__text {
     @include sr-only;
@@ -9,7 +18,7 @@
 
   &__logo {
     background-color: white;
-    padding: 1rem;
+    padding: 1rem 0;
     position: absolute;
     top: 50%;
     left: 50%;

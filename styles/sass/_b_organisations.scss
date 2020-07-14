@@ -1,4 +1,6 @@
 .organisations {
+  margin-bottom: $section-bottom-margin;
+
   &__header {
     font-family: $heading__font-family;
     font-size: 2rem;
@@ -17,9 +19,16 @@
 
   &__grid--logo {
     display: inline-block;
-    width: 20vw;
-    height: 20vw;
+    width: 200px;
+    height: 200px;
     margin: 1rem 2rem;
     background-color: grey;
+  }
+
+  @include for-phone-only {
+    &__grid--logo {
+      width: 25vw;
+      height: 25vw;
+    }
   }
 }

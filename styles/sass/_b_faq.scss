@@ -1,4 +1,6 @@
 .faq {
+  margin-bottom: $section-bottom-margin;
+
   &__header {
     padding: 8vw;
     background-image: url(/assets/images/faq-background.jpg);
@@ -11,21 +13,27 @@
     font-size: 1.1rem;
     color: $accent-text-color-1;
     text-decoration: $accent-text-color-1;
-    max-width: 100vw;
+    max-width: 100%;
     box-sizing: border-box;
-  }
+    margin: -1rem 0;
 
-  @include for-tablet-portrait-up {
-    &__header {
-      font-size: 1.7rem;
+    @include for-phone-only {
+      font-size: 1.5rem;
+      &--widetext {
+        display: none;
+      }
     }
   }
 
   &__icon {
+    display: inline-block;
     height: 2rem;
     width: auto;
     position: relative;
     top: 8px;
+    @include for-phone-only {
+      display: none;
+    }
   }
 
   &__accordion {
@@ -63,5 +71,16 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+  }
+
+  @include for-tablet-portrait-up {
+    &__header {
+      font-size: 1.7rem;
+    }
+
+    &__icon {
+      height: 3rem;
+      top: 14px;
+    }
   }
 }

@@ -8,6 +8,12 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+  margin-bottom: $section-bottom-margin;
+  padding: 1rem;
+
+  @include for-phone-only {
+    margin-bottom: 1rem;
+  }
 
   &__heading {
     min-width: 100%;

@@ -1,4 +1,10 @@
 .explainer {
+  margin-bottom: $section-bottom-margin;
+
+  @include for-phone-only {
+    margin-bottom: 1rem;
+  }
+
   &__text--heading {
     margin-top: 0;
     padding: 0 0.5rem;
@@ -18,9 +24,17 @@
   @include for-tablet-landscape-up {
     display: flex;
     align-items: flex-start;
+    justify-content: flex-start;
 
     &__image {
       min-width: 50%;
+    }
+
+    &__image--caption {
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      font-style: italic;
+      text-align: center;
     }
 
     &__text {
