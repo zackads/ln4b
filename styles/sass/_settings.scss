@@ -36,6 +36,14 @@ body {
   text-decoration: $bodytext-decoration;
 }
 
+a {
+  color: $bodytext-color;
+}
+
+a:visited {
+  color: $bodytext-color;
+}
+
 /* Images responsive by default */
 img {
   width: 100%;

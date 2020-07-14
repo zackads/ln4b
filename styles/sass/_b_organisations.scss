@@ -1,0 +1,25 @@
+.organisations {
+  &__header {
+    font-family: $heading__font-family;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  &__header--line {
+    display: inline-block;
+  }
+
+  &__grid {
+    display: inline-block;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  &__grid--logo {
+    display: inline-block;
+    width: 20vw;
+    height: 20vw;
+    margin: 1rem 2rem;
+    background-color: grey;
+  }
+}

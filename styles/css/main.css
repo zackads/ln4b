@@ -24,6 +24,14 @@ body {
   text-decoration: #0a0a0a;
 }
 
+a {
+  color: #0a0a0a;
+}
+
+a:visited {
+  color: #0a0a0a;
+}
+
 /* Images responsive by default */
 img {
   width: 100%;
@@ -240,6 +248,35 @@ img {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+.organisations__header {
+  font-family: Muli, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+.organisations__header--line {
+  display: inline-block;
+}
+.organisations__grid {
+  display: inline-block;
+  text-align: center;
+  margin-top: 1rem;
+}
+.organisations__grid--logo {
+  display: inline-block;
+  width: 20vw;
+  height: 20vw;
+  margin: 1rem 2rem;
+  background-color: grey;
+}
+
+.footer {
+  background-color: #dadada;
+  margin: 0;
+  padding: 0.5rem;
+  line-height: 1.6;
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=main.css.map */
