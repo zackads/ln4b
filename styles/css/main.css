@@ -164,7 +164,7 @@ img {
   background-color: #faa916;
 }
 .groupfinder__msg {
-  display: inline-flex;
+  display: none;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
