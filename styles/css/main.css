@@ -133,4 +133,53 @@ img {
   height: 100%;
 }
 
+.groupfinder {
+  background: url("/assets/images/groupfinder-background.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.groupfinder__heading {
+  min-width: 100%;
+  font-size: 1.2rem;
+}
+.groupfinder__heading span {
+  background-color: white;
+  line-height: 2.5;
+  color: #0a0a0a;
+  text-decoration: #0a0a0a;
+  padding: 0.4rem;
+}
+.groupfinder__pin {
+  max-height: 5rem;
+  width: auto;
+}
+.groupfinder__form {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #faa916;
+}
+.groupfinder__msg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 50%;
+}
+.groupfinder__msg p {
+  width: 100%;
+}
+.groupfinder__social-logo {
+  max-height: 2rem;
+  width: auto;
+  margin-right: 1rem;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,58 @@
+.groupfinder {
+  background: url("/assets/images/groupfinder-background.png");
+  background-size: cover;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  &__heading {
+    min-width: 100%;
+    font-size: 1.2rem;
+
+    span {
+      background-color: white;
+      line-height: 2.5;
+      color: #0a0a0a;
+      text-decoration: rgb(10, 10, 10);
+      padding: 0.4rem;
+    }
+  }
+
+  &__pin {
+    max-height: 5rem;
+    width: auto;
+  }
+
+  &__form {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: $accent-color-2;
+  }
+
+  &__msg {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+
+    max-width: 50%;
+
+    p {
+      width: 100%;
+    }
+  }
+
+  &__social-logo {
+    max-height: 2rem;
+    width: auto;
+    margin-right: 1rem;
+  }
+}
