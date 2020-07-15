@@ -17,14 +17,17 @@
 
   &__heading {
     min-width: 100%;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: white;
+    line-height: 2.5;
+    color: #0a0a0a;
+    text-decoration: rgb(10, 10, 10);
+    padding: 0.4rem;
 
     span {
-      background-color: white;
-      line-height: 2.5;
-      color: #0a0a0a;
-      text-decoration: rgb(10, 10, 10);
-      padding: 0.4rem;
+      display: block;
+      line-height: 1.5;
     }
   }
 
