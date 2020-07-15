@@ -290,7 +290,7 @@ a:visited {
   font-family: Muli, sans-serif;
   font-size: medium;
   cursor: pointer;
-  padding: 18px;
+  padding: 1rem;
   width: 100%;
   text-align: left;
   border: none;
@@ -335,6 +335,7 @@ a:visited {
   font-family: Muli, sans-serif;
   font-size: 2rem;
   text-align: center;
+  padding: 1rem;
 }
 .organisations__header--line {
   display: inline-block;
