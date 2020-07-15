@@ -1,0 +1,112 @@
+/* Media breakpoints */
+// https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
+/* Site-wide variables */
+$bodytext-color: #0a0a0a;
+$bodytext-decoration: rgb(10, 10, 10);
+$accent-color-1: #79d70f;
+$accent-text-color-1: #ffffff;
+$accent-color-2: #faa916;
+$accent-text-color-2: #0a0a0a;
+
+/* Layout */
+.container {
+  max-width: 980px;
+  margin: auto;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  min-width: 320px;
+}
+
+$section-bottom-margin: 3rem;
+$text-padding: 1rem;
+
+/* Images responsive by default */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Typography */
+@font-face {
+  font-family: "Muli";
+  src: url(/assets/fonts/Muli-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(/assets/fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+$heading__font-family: Muli, sans-serif;
+$bodytext__font-family: Roboto, sans-serif;
+
+html {
+  font-size: 16px;
+  font-family: $bodytext__font-family;
+  line-height: 1.6;
+  text-decoration: $bodytext-decoration;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+a {
+  color: $bodytext-color;
+}
+
+a:visited {
+  color: $bodytext-color;
+}
+
+/* For display only to screen readers */
+@mixin sr-only {
+  position: absolute;
+  margin: -1px 0 0 -1px;
+  padding: 0;
+  display: block;
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  line-height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  outline: 0;
+}

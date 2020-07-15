@@ -1,0 +1,369 @@
+@charset "UTF-8";
+/* Media breakpoints */
+/* Site-wide variables */
+/* Layout */
+.container {
+  max-width: 980px;
+  margin: auto;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  min-width: 320px;
+}
+
+/* Images responsive by default */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Typography */
+@font-face {
+  font-family: "Muli";
+  src: url(/assets/fonts/Muli-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(/assets/fonts/Roboto-Regular.ttf) format("truetype");
+}
+html {
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  line-height: 1.6;
+  text-decoration: #0a0a0a;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+a {
+  color: #0a0a0a;
+}
+
+a:visited {
+  color: #0a0a0a;
+}
+
+/* For display only to screen readers */
+/* Block elements */
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+}
+@media (max-width: 599px) {
+  .header {
+    margin-bottom: 0;
+  }
+}
+.header__background {
+  display: block;
+}
+.header__text {
+  position: absolute;
+  margin: -1px 0 0 -1px;
+  padding: 0;
+  display: block;
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  line-height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  outline: 0;
+}
+.header__logo {
+  background-color: white;
+  padding: 1rem 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+}
+
+.explainer {
+  margin-bottom: 3rem;
+}
+@media (max-width: 599px) {
+  .explainer {
+    margin-bottom: 1rem;
+  }
+}
+.explainer__text--heading {
+  margin-top: 0;
+  padding: 0 0.5rem;
+  font-family: Muli, sans-serif;
+  color: #ffffff;
+  text-decoration: white;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  background-color: #79d70f;
+}
+.explainer__text--bodytext {
+  padding: 0 0.5rem;
+}
+@media (min-width: 900px) {
+  .explainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .explainer__image {
+    min-width: 50%;
+  }
+  .explainer__image--caption {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: center;
+  }
+  .explainer__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+  }
+  .explainer__text--heading {
+    margin-top: 1rem;
+    margin-left: -6rem;
+  }
+  .explainer__text--bodytext {
+    margin-left: 2rem;
+    font-size: 1rem;
+  }
+}
+
+.video {
+  max-width: 100%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+@media (max-width: 599px) {
+  .video {
+    margin-bottom: 1rem;
+  }
+}
+.video__heading {
+  font-family: Muli, sans-serif;
+  font-size: 2rem;
+  color: #0a0a0a;
+  text-decoration: #0a0a0a;
+}
+@media (min-width: 600px) {
+  .video {
+    max-width: 70%;
+  }
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.groupfinder {
+  background: url("/assets/images/groupfinder-background.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+@media (max-width: 599px) {
+  .groupfinder {
+    margin-bottom: 1rem;
+  }
+}
+.groupfinder__heading {
+  min-width: 100%;
+  font-weight: bold;
+  background-color: white;
+  line-height: 2.5;
+  color: #0a0a0a;
+  text-decoration: #0a0a0a;
+  padding: 0.4rem;
+}
+.groupfinder__heading span {
+  display: block;
+  line-height: 1.5;
+}
+.groupfinder__pin {
+  max-height: 5rem;
+  width: auto;
+}
+.groupfinder__form {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #faa916;
+}
+.groupfinder__msg {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 50%;
+}
+.groupfinder__msg p {
+  width: 100%;
+}
+.groupfinder__social-logo {
+  max-height: 2rem;
+  width: auto;
+  margin-right: 1rem;
+}
+
+.faq {
+  margin-bottom: 3rem;
+}
+.faq__header {
+  padding: 8vw;
+  background-image: url(/assets/images/faq-background.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  text-align: center;
+  font-family: Muli, sans-serif;
+  font-size: 1.1rem;
+  color: #ffffff;
+  text-decoration: #ffffff;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: -1rem 0;
+  font-weight: bold;
+}
+@media (max-width: 599px) {
+  .faq__header {
+    font-size: 1.5rem;
+  }
+  .faq__header--widetext {
+    display: none;
+  }
+}
+.faq__icon {
+  display: inline-block;
+  height: 2rem;
+  width: auto;
+  position: relative;
+  top: 8px;
+}
+@media (max-width: 599px) {
+  .faq__icon {
+    display: none;
+  }
+}
+.faq__accordion {
+  font-family: Muli, sans-serif;
+  font-size: medium;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  background-color: white;
+}
+.faq__accordion > h3 {
+  display: inline;
+}
+.faq__accordion::after {
+  content: "+";
+  font-weight: bold;
+  float: right;
+  margin-left: 10px;
+}
+.faq__accordion.active::after {
+  content: "−";
+}
+.faq__panel {
+  margin-left: 1rem;
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+@media (min-width: 600px) {
+  .faq__header {
+    font-size: 1.7rem;
+  }
+  .faq__icon {
+    height: 3rem;
+    top: 14px;
+  }
+}
+
+.organisations {
+  margin-bottom: 3rem;
+}
+.organisations__header {
+  font-family: Muli, sans-serif;
+  text-align: center;
+  padding: 1rem;
+}
+.organisations__header--line {
+  display: inline-block;
+}
+.organisations__grid {
+  display: inline-block;
+  text-align: center;
+  margin-top: 1rem;
+}
+.organisations__grid--logo {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 1rem 2rem;
+  background-color: grey;
+}
+@media (max-width: 599px) {
+  .organisations__grid--logo {
+    width: 25vw;
+    height: 25vw;
+  }
+}
+
+.footer {
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: #dadada;
+  margin: 0;
+  padding: 0.5rem;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=main.css.map */
