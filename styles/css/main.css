@@ -84,15 +84,6 @@ a:visited {
   border: 0;
   outline: 0;
 }
-.header__logo {
-  background-color: white;
-  padding: 1rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 80vw;
-}
 
 .explainer {
   margin-bottom: 3rem;
