@@ -107,55 +107,51 @@ a:visited {
 }
 @media (min-width: 900px) {
   .explainer {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "carousel text" "video text";
   }
-  .explainer__image {
-    min-width: 50%;
+  .explainer__carousel {
+    grid-area: carousel;
+    margin-bottom: 2rem;
   }
-  .explainer__image--caption {
-    margin-top: 1rem;
-    font-size: 0.8rem;
-    font-style: italic;
+  .explainer__video {
+    grid-area: video;
+    max-width: 100%;
     text-align: center;
+    margin: auto;
+    margin-bottom: 3rem;
   }
+}
+@media (min-width: 900px) and (max-width: 599px) {
+  .explainer__video {
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 900px) {
+  .explainer__video__heading {
+    font-family: Muli, sans-serif;
+    font-size: 2rem;
+    color: #0a0a0a;
+    text-decoration: #0a0a0a;
+  }
+}
+@media (min-width: 900px) {
   .explainer__text {
+    grid-area: text;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: start;
   }
   .explainer__text--heading {
+    z-index: 1;
     margin-top: 1rem;
     margin-left: -6rem;
   }
   .explainer__text--bodytext {
     margin-left: 2rem;
     font-size: 1rem;
-  }
-}
-
-.video {
-  max-width: 100%;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 3rem;
-}
-@media (max-width: 599px) {
-  .video {
-    margin-bottom: 1rem;
-  }
-}
-.video__heading {
-  font-family: Muli, sans-serif;
-  font-size: 2rem;
-  color: #0a0a0a;
-  text-decoration: #0a0a0a;
-}
-@media (min-width: 600px) {
-  .video {
-    max-width: 70%;
   }
 }
 
