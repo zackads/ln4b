@@ -5,7 +5,7 @@
   margin-bottom: $section-bottom-margin;
 
   @include for-phone-only {
-    margin-bottom: 0;
+    margin-bottom: $section-bottom-margin--phones;
   }
 
   &__background {

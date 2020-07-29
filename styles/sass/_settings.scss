@@ -38,6 +38,10 @@ $accent-text-color-2: #0a0a0a;
 .container {
   max-width: 980px;
   margin: auto;
+
+  @include for-phone-only {
+    padding: 0 !important;
+  }
 }
 
 body {
@@ -49,6 +53,7 @@ html {
 }
 
 $section-bottom-margin: 3rem;
+$section-bottom-margin--phones: 0.5rem;
 $text-padding: 1rem;
 
 /* Images responsive by default */

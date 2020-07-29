@@ -2,18 +2,25 @@
   margin-bottom: $section-bottom-margin;
 
   @include for-phone-only {
-    margin-bottom: 1rem;
+    margin-bottom: $section-bottom-margin--phones;
   }
 
   &__text--heading {
     margin-top: 0;
-    padding: 0 0.5rem;
+    margin-bottom: $section-bottom-margin;
+    padding: 0.5rem 0.5rem;
 
     font-family: $heading__font-family;
     color: #ffffff;
     text-decoration: rgb(255, 255, 255);
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
     background-color: $accent-color-1;
+
+    @include for-phone-only {
+      text-align: center;
+      font-size: 1.3rem;
+      margin-bottom: $section-bottom-margin--phones;
+    }
   }
 
   &__text--bodytext {
@@ -22,26 +29,19 @@
 
   @include for-tablet-landscape-up {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-areas:
       "carousel text"
       "video text";
+    align-items: start;
 
     &__carousel {
       grid-area: carousel;
-      margin-bottom: 2rem;
     }
 
     &__video {
       grid-area: video;
       max-width: 100%;
-      text-align: center;
-      margin: auto;
-      margin-bottom: $section-bottom-margin;
-
-      @include for-phone-only {
-        margin-bottom: 1rem;
-      }
 
       &__heading {
         font-family: $heading__font-family;
@@ -88,4 +88,8 @@
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.carousel-caption {
+  background-color: hsla(0, 0%, 50%, 0.4);
 }
