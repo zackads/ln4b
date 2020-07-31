@@ -76,18 +76,18 @@ a:visited {
   display: block;
 }
 .header__text {
+  font-size: 1.4rem;
   position: absolute;
-  margin: -1px 0 0 -1px;
-  padding: 0;
-  display: block;
-  width: 1px;
-  height: 1px;
-  font-size: 1px;
-  line-height: 1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-  outline: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 80vw;
+  padding: 1rem;
+  font-family: Muli, sans-serif;
+  color: #ffffff;
+  text-decoration: white;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  background-color: rgba(121, 215, 15, 0.7);
 }
 
 .explainer {
