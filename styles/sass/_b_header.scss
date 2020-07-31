@@ -1,25 +1,22 @@
 .header {
   position: relative;
   text-align: center;
-  color: white;
-  margin-bottom: $section-bottom-margin;
+  margin: $section-vertical-margin auto;
 
   @include for-phone-only {
-    margin-bottom: $section-bottom-margin--phones;
-  }
-
-  &__background {
-    display: block;
+    margin-bottom: $section-vertical-margin-phones;
   }
 
   &__text {
+    @include for-phone-only {
+      min-width: 80vw;
+    }
     font-size: $font-size-h1;
 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 80vw;
     padding: 1rem;
 
     font-family: $heading__font-family;

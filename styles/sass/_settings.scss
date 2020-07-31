@@ -35,7 +35,7 @@ $accent-color-2: #faa916;
 $accent-text-color-2: #0a0a0a;
 $header-logo-background: hsla(88, 87%, 45%, 0.7);
 
-$font-size-h1: 1.4rem;
+$font-size-h1: 1.6rem;
 $font-size-h2: 1.2rem;
 $font-size-h3: 1.1rem;
 
@@ -49,6 +49,13 @@ $font-size-h3: 1.1rem;
   }
 }
 
+.bodytext {
+  max-width: 750px;
+  margin: auto;
+  padding: 0.2rem;
+  text-align: justify;
+}
+
 body {
   margin: 0;
 }
@@ -57,8 +64,8 @@ html {
   min-width: 320px;
 }
 
-$section-bottom-margin: 3rem;
-$section-bottom-margin--phones: 0.5rem;
+$section-vertical-margin: 1rem;
+$section-vertical-margin-phones: 0.5rem;
 $text-padding: 1rem;
 
 /* Images responsive by default */
@@ -90,7 +97,7 @@ html {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 h3 {
