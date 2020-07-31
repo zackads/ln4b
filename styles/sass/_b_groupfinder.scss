@@ -15,31 +15,6 @@
     margin-bottom: 1rem;
   }
 
-  &__heading {
-    width: 100%;
-    font-weight: bold;
-    background-color: white;
-    line-height: 2.5;
-    color: #0a0a0a;
-    text-decoration: rgb(10, 10, 10);
-    padding: 0.4rem;
-
-    span {
-      display: block;
-      line-height: 1.5;
-    }
-  }
-
-  &__pin {
-    max-height: 5rem;
-    width: auto;
-    display: none;
-
-    @include for-tablet-landscape-up {
-      display: block;
-    }
-  }
-
   &__form {
     margin: 1rem;
     padding: 1rem;
@@ -62,10 +37,9 @@
       width: 100%;
     }
   }
+}
 
-  &__social-logo {
-    max-height: 2rem;
-    width: auto;
-    margin-right: 1rem;
-  }
+.form-inline .form-group,
+label {
+  margin-right: 1rem;
 }
