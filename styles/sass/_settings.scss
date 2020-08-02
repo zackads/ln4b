@@ -80,12 +80,12 @@ img {
 /* Typography */
 @font-face {
   font-family: "Muli";
-  src: url(/assets/fonts/Muli-Regular.ttf) format("truetype");
+  src: url(../../assets/fonts/Muli-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url(/assets/fonts/Roboto-Regular.ttf) format("truetype");
+  src: url(../../assets/fonts/Roboto-Regular.ttf) format("truetype");
 }
 
 $heading__font-family: Muli, sans-serif;
