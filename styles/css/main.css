@@ -233,7 +233,7 @@ a:visited {
 }
 
 .cta {
-  background: url("/assets/images/groupfinder-background.png");
+  background: url("assets/images/groupfinder-background.png");
   background-size: cover;
   display: flex;
   flex-direction: row;
@@ -295,7 +295,7 @@ a:visited {
 }
 .cta_minor__header {
   padding: 8vw;
-  background-image: url(/assets/images/faq-background.jpg);
+  background-image: url("assets/images/faq-background.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
