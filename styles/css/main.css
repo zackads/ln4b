@@ -109,6 +109,7 @@ a:visited {
   background-color: #79d70f;
   font-size: 1.2rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 .explainer__text--bodytext {
   padding: 0 0.5rem;
@@ -173,20 +174,28 @@ a:visited {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  text-align: center;
   justify-content: center;
   margin: 1rem auto;
-  padding: 1rem;
-}
-@media (max-width: 599px) {
-  .groupfinder {
-    margin-bottom: 1rem;
-  }
+  padding: 1rem 0;
 }
 .groupfinder__form {
-  margin: 1rem;
-  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 360px;
+  padding: 0.5rem;
   background-color: #faa916;
+}
+.groupfinder__form label {
+  text-align: center;
+  width: 100%;
+}
+.groupfinder__form * {
+  margin: 0.5rem;
+}
+.groupfinder .form-control {
+  width: auto;
 }
 .groupfinder__msg {
   display: none;
@@ -200,11 +209,6 @@ a:visited {
 }
 .groupfinder__msg p {
   width: 100%;
-}
-
-.form-inline .form-group,
-label {
-  margin-right: 1rem;
 }
 
 .faq {
