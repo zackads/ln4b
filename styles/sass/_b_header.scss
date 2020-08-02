@@ -9,7 +9,7 @@
 
   &__text {
     @include for-phone-only {
-      min-width: 80vw;
+      min-width: 70vw;
     }
     font-size: $font-size-h1;
 
