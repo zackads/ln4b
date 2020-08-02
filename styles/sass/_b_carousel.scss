@@ -1,0 +1,12 @@
+.carousel-caption {
+  background-color: hsla(0, 0%, 50%, 0.4);
+}
+
+.carousel {
+  max-width: 100%;
+  margin: auto;
+
+  @include for-tablet-landscape-up {
+    max-width: $embed-media-maxwidth;
+  }
+}
