@@ -110,6 +110,7 @@ a:visited {
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 1rem;
+  width: 100%;
 }
 .explainer__text--bodytext {
   padding: 0 0.5rem;
@@ -165,50 +166,6 @@ a:visited {
 .comparison_caption {
   font-style: italic;
   text-align: center;
-}
-
-.groupfinder {
-  background: url("/assets/images/groupfinder-background.png");
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem auto;
-  padding: 1rem 0;
-}
-.groupfinder__form {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  max-width: 360px;
-  padding: 0.5rem;
-  background-color: #faa916;
-}
-.groupfinder__form label {
-  text-align: center;
-  width: 100%;
-}
-.groupfinder__form * {
-  margin: 0.5rem;
-}
-.groupfinder .form-control {
-  width: auto;
-}
-.groupfinder__msg {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: white;
-  padding: 1rem;
-  margin: 1rem;
-  max-width: 50%;
-}
-.groupfinder__msg p {
-  width: 100%;
 }
 
 .faq {
@@ -331,6 +288,57 @@ a:visited {
   padding: 0.5rem;
   line-height: 1.6;
   opacity: 0.8;
+}
+
+.cta {
+  background: url("/assets/images/groupfinder-background.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  padding: 1rem 0;
+}
+.cta__form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 360px;
+  padding: 0.5rem;
+  background-color: #faa916;
+}
+.cta__form label {
+  text-align: center;
+  width: 100%;
+}
+.cta__form * {
+  margin: 0.5rem;
+}
+.cta__form p {
+  text-align: center;
+}
+.cta__image {
+  width: 100px;
+  height: auto;
+}
+.cta .form-control {
+  width: auto;
+}
+.cta__msg {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 50%;
+}
+.cta__msg p {
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
