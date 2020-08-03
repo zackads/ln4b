@@ -64,27 +64,3 @@
     }
   }
 }
-
-.cta_minor {
-  text-align: center;
-  font-size: $font-size-h2;
-  padding: 1rem;
-
-  &__header {
-    padding: 8vw;
-    background-image: url(../../assets/images/faq-background.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
-    text-align: center;
-    font-family: $heading__font-family;
-    font-size: 1.1rem;
-    color: $accent-text-color-1;
-    text-decoration: $accent-text-color-1;
-    max-width: 100%;
-    box-sizing: border-box;
-    margin: -1rem 0;
-    font-weight: bold;
-  }
-}
