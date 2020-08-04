@@ -286,10 +286,11 @@ a:visited {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  text-align: center;
   background-color: white;
   padding: 1rem;
   margin: 1rem;
-  max-width: 50%;
+  max-width: 360px;
 }
 .cta__msg p {
   width: 100%;
