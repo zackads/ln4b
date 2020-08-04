@@ -25,7 +25,7 @@ $(document).ready(function () {
     ) {
       let ward = postcode_details.result.admin_ward;
       // Get Facebook group name and link from ward
-      $.getJSON("/ln_groups.json", function (ln_groups) {
+      $.getJSON("assets/data/ln_groups.json", function (ln_groups) {
         if (ln_groups[ward]) {
           $("#group-msg").html(`
             <p>Great news! A local Liveable Neighbourhoods group is active in ${ward}:</p>
