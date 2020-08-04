@@ -27,6 +27,12 @@ $(document).ready(function () {
       // Get Facebook group name and link from ward
       $.getJSON("assets/data/ln_groups.json", function (ln_groups) {
         if (ln_groups[ward]) {
+          /* 
+          / Option to open pop-up window rather than display link.  
+          / One less 'click' for the user, though new window/tab may be blocked.
+          /
+          / window.open(ln_groups[ward].url, "_blank");
+          */
           $("#group-msg").html(`
             <p>Great news! A local Liveable Neighbourhoods group is active in ${ward}:</p>
             <img class="groupfinder__social-logo" id="fb-logo" src="/assets/images/fb-logo.png" alt="Facebook logo" />
