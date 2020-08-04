@@ -267,6 +267,13 @@ a:visited {
   text-decoration: white;
   text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
 }
+.cta__fb_logo {
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  height: 1.5rem;
+  width: auto;
+}
 .cta__image {
   width: 100px;
   height: auto;
@@ -286,29 +293,6 @@ a:visited {
 }
 .cta__msg p {
   width: 100%;
-}
-
-.cta_minor {
-  text-align: center;
-  font-size: 1.2rem;
-  padding: 1rem;
-}
-.cta_minor__header {
-  padding: 8vw;
-  background-image: url(../../assets/images/faq-background.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: transparent;
-  text-align: center;
-  font-family: Muli, sans-serif;
-  font-size: 1.1rem;
-  color: #ffffff;
-  text-decoration: #ffffff;
-  max-width: 100%;
-  box-sizing: border-box;
-  margin: -1rem 0;
-  font-weight: bold;
 }
 
 .carousel-caption {
