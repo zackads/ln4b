@@ -256,10 +256,14 @@ a:visited {
   text-decoration: white;
   text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
 }
+.cta__arrow {
+  margin: 1rem;
+  font-size: 5rem;
+  line-height: 3rem;
+  font-style: bold;
+  color: #2b580c;
+}
 .cta__fb_logo {
-  display: inline-block;
-  position: relative;
-  top: -1px;
   height: 1.5rem;
   width: auto;
   margin-left: 0;
