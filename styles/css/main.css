@@ -204,22 +204,12 @@ a:visited {
 .organisations__grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  margin-top: 1rem;
+  justify-content: space-around;
+  align-items: center;
 }
 .organisations__grid--logo {
-  display: inline-block;
-  width: 200px;
-  height: 200px;
+  max-width: 100px;
   margin: 1rem;
-  background-color: grey;
-}
-@media (max-width: 599px) {
-  .organisations__grid--logo {
-    width: 25vw;
-    height: 25vw;
-  }
 }
 
 .footer {
