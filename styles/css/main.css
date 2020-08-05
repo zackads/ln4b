@@ -50,14 +50,6 @@ html {
   text-decoration: #0a0a0a;
 }
 
-h2 {
-  font-size: 1.3rem;
-}
-
-h3 {
-  font-size: 1.2rem;
-}
-
 a {
   color: #0a0a0a;
 }
@@ -79,7 +71,7 @@ a:visited {
   }
 }
 .header__text {
-  font-size: 1.6rem;
+  font-size: 2.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -93,7 +85,7 @@ a:visited {
 }
 @media (max-width: 599px) {
   .header__text {
-    min-width: 70vw;
+    font-size: 1.5rem;
   }
 }
 
@@ -101,19 +93,23 @@ a:visited {
   margin: 1rem auto;
 }
 .explainer__text--heading {
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 1.5rem;
   font-family: Muli, sans-serif;
   color: #ffffff;
   text-decoration: white;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   background-color: #79d70f;
-  font-size: 1.2rem;
+  font-size: 2rem;
   text-align: center;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   width: 100%;
 }
 .explainer__text--bodytext {
   padding: 0 0.5rem;
+}
+.explainer__video {
+  margin: 3rem 0 0 0;
 }
 
 .embed-container {
@@ -142,6 +138,7 @@ a:visited {
 
 .comparison_image {
   max-width: 45%;
+  margin: 2rem 0;
 }
 @media (max-width: 599px) {
   .comparison_image {
@@ -150,6 +147,8 @@ a:visited {
 }
 
 .comparison_caption {
+  font-size: small;
+  padding: 0.5rem;
   font-style: italic;
   text-align: center;
 }
