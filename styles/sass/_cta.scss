@@ -44,15 +44,18 @@
     top: -1px;
     height: 1.5rem;
     width: auto;
+    margin-left: 0;
+  }
+
+  &__change_logo {
+    display: inline-block;
+    width: 100px;
+    height: auto;
+    margin-left: 0;
   }
 
   &__fb_btn {
     background-color: #4267b2;
-  }
-
-  &__image {
-    width: 100px;
-    height: auto;
   }
 
   .form-control {
@@ -65,11 +68,9 @@
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-
     background-color: white;
     padding: 1rem;
-    margin: 1rem;
-
+    margin: 1rem 1rem 0 1rem;
     max-width: 360px;
 
     p {
