@@ -34,7 +34,7 @@ $(document).ready(function () {
           / window.open(ln_groups[ward].url, "_blank");
           */
           $("#group-msg").html(`
-            <p>Great news! A local Liveable Neighbourhoods group is active in ${ward}:</p>
+            <p>Great news! A local Liveable Neighbourhoods group is active in your neighbourhood:</p>
             <a href="${ln_groups[ward].url}"><button class="btn btn-primary cta__fb_btn">Open in Facebook <img class="cta__fb_logo" src="assets/images/fb_logo_white.png" alt="Facebook logo"/></button></a>
           `);
           $("#group-msg").css("display", "inline-flex");
