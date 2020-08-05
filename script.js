@@ -35,8 +35,7 @@ $(document).ready(function () {
           */
           $("#group-msg").html(`
             <p>Great news! A local Liveable Neighbourhoods group is active in ${ward}:</p>
-            <img class="groupfinder__social-logo" id="fb-logo" src="/assets/images/fb-logo.png" alt="Facebook logo" />
-            <a href="${ln_groups[ward].url}">${ln_groups[ward].name}</a>
+            <a href="${ln_groups[ward].url}"><button class="btn btn-primary cta__fb_btn">Open in Facebook <img class="cta__fb_logo" src="assets/images/fb_logo_white.png" alt="Facebook logo"/></button></a>
           `);
           $("#group-msg").css("display", "inline-flex");
         } else {

@@ -274,6 +274,9 @@ a:visited {
   height: 1.5rem;
   width: auto;
 }
+.cta__fb_btn {
+  background-color: #4267b2;
+}
 .cta__image {
   width: 100px;
   height: auto;
