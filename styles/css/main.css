@@ -77,16 +77,17 @@ a:visited {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 1rem;
+  padding: 0.5rem;
   font-family: Muli, sans-serif;
   color: #ffffff;
   text-decoration: white;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   background-color: rgba(121, 215, 15, 0.7);
 }
-@media (min-width: 900px) {
+@media (min-width: 600px) {
   .header__text {
     font-size: 2.5rem;
+    padding: 1rem;
   }
 }
 
