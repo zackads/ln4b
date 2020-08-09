@@ -1,9 +1,9 @@
-// Accordion
-var acc = document.getElementsByClassName("faq__accordion");
+// FAQ accordion
+var faqAcc = document.getElementsByClassName("faq__accordion");
 var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
+for (i = 0; i < faqAcc.length; i++) {
+  faqAcc[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
@@ -13,6 +13,18 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+// Privacy policy accordion
+var privAcc = document.getElementById("footer_priv_acc");
+privAcc.addEventListener("click", function () {
+  this.classList.toggle("active");
+  var panel = this.nextElementSibling;
+  if (panel.style.maxHeight) {
+    panel.style.maxHeight = null;
+  } else {
+    panel.style.maxHeight = panel.scrollHeight + "px";
+  }
+});
 
 // # Postcode -> ward lookup
 $(document).ready(function () {
