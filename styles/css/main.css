@@ -21,10 +21,13 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
+  position: relative;
 }
 
 html {
   min-width: 320px;
+  overflow-x: hidden;
 }
 
 /* Images responsive by default */
@@ -51,7 +54,7 @@ html {
 }
 
 a {
-  color: #0a0a0a;
+  color: #0a0a0a !important;
   text-decoration: underline !important;
 }
 
