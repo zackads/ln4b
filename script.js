@@ -53,7 +53,7 @@ $(document).ready(function () {
         } else {
           $("#group-msg")
             .html(`<p>No group currently exists for your area. Why don't you set one up?</p>
-          <p>If you need support, speak to <a href="mailto:info@bristolcycling.org.uk">info@bristolcycling.org.uk</a>`);
+          <p>If you need support, speak to <a href="mailto:hello@liveablebristol.org.uk">hello@liveablebristol.org.uk</a>`);
           $("#group-msg").css("display", "inline-flex");
         }
       });
