@@ -86,10 +86,10 @@ For example:
   },
 ```
 
-**\<ward name\> must exactly match the official ward name. If in doubt check the return value from postcodes.io.**
+\<ward name\> must exactly match the official ward name. If in doubt check the return value from the [postcode.io API](https://postcodes.io).
 
 > ❌ Incorrect ward name: `Hengrove & Whitchurch Park`
-
+>
 > ✅ Correct ward name: `Hengrove and Whitchurch Park`
 
 ## Get in touch
