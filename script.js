@@ -39,12 +39,6 @@ $(document).ready(function () {
       // Get Facebook group name and link from ward
       $.getJSON("assets/data/ln_groups.json", function (ln_groups) {
         if (ln_groups[ward]) {
-          /* 
-          / Option to open pop-up window rather than display link.  
-          / One less 'click' for the user, though new window/tab may be blocked.
-          /
-          / window.open(ln_groups[ward].url, "_blank");
-          */
           $("#group-msg").html(`
             <p>Great news! A local Liveable Neighbourhoods group is active in your area.</p>
             <a href="${ln_groups[ward].url}"><button class="btn btn-primary cta__fb_btn">Open in Facebook <img class="cta__fb_logo" src="assets/images/fb_logo_white.png" alt="Facebook logo"/></button></a>
@@ -54,6 +48,7 @@ $(document).ready(function () {
           $("#group-msg")
             .html(`<p>No group currently exists for your area. Why don't you set one up?</p>
           <p>If you need support, speak to <a href="mailto:hello@liveablebristol.org.uk">hello@liveablebristol.org.uk</a>`);
+
           $("#group-msg").css("display", "inline-flex");
         }
       });
@@ -64,7 +59,9 @@ $(document).ready(function () {
       $(
         "#group-msg"
       ).html(`<p>We're having difficulty finding your postcode.  Is it definitely correct?</p>
-          <p>You can get in touch directly with <a href="mailto:info@bristolcycling.org.uk">info@bristolcycling.org.uk</a> and we'll be able to help you find your local group.`);
+          <p>You can get in touch directly with <a href="mailto:hello@liveablebristol.org.uk">hello@liveablebristol.org.uk</a> and we'll be able to help you find your local group.`);
+
+      $("#group-msg").css("display", "inline-flex");
     });
   });
   $("#postcode-input").keypress(function (e) {
