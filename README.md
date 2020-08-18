@@ -59,7 +59,9 @@ The moderately self-documenting code for this is in `script.js`.
 Change requests from non-developers should be submitted as a Slack message in the [#ltn-microsite](https://bristolcycling.slack.com/archives/G016633DZ0C) channel in a format similar to:
 
 ```
-Change request:  Add Eastside Community Trust logo.  Logo is in the usual folder.  Hovertext to be "Eastside Community Trust".  Hyperlink to be "www.eastsidecommunity.com"
+Change request:  Add Eastside Community Trust logo.
+Logo is in the usual folder.  Hovertext to be "Eastside
+Community Trust".  Hyperlink to be "www.eastsidecommunity.com"
 ```
 
 A developer can then 'assign' the change request to themselves with a comment, and mark as done with a green tick emoji.
