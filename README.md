@@ -28,7 +28,7 @@ $ sass --watch styles/sass:styles/css
 
 ### Deployment to staging
 
-6. Push to GitHub on the `master` branch. Changes will be made live on the staging site at [`https://zackads.github.io/ln4b`](https://zackads.github.io).
+6. Push to GitHub on the `master` branch. Changes will be made live on the staging site at [`https://zackads.github.io/ln4b`](https://zackads.github.io/ln4b).
 
 ### Deployment to production
 
