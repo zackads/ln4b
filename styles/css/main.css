@@ -62,6 +62,10 @@ a:visited {
   color: #0a0a0a;
 }
 
+.keyword {
+  color: #79d70f;
+}
+
 /* For display only to screen readers */
 /* Block elements */
 .header {

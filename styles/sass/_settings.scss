@@ -110,6 +110,10 @@ a:visited {
   color: $bodytext-color;
 }
 
+.keyword {
+  color: $accent-color-1;
+}
+
 /* For display only to screen readers */
 @mixin sr-only {
   position: absolute;
